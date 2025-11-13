@@ -1,0 +1,15 @@
+
+.titre-page{
+    color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 300px;
+    margin: 100px;
+}
+
+body{
+    background-image: url("/images/background-4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
