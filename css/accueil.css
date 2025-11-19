@@ -6,10 +6,57 @@
     font-family: "Montserrat", sans-serif;
     font-size: 300px;
     margin: 100px;
+    padding: 130px 0 0 0;
 }
 
-body{
-    background-image: url("/images/background-5.jpg");
+.fond{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/background-4.jpeg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+}
+
+.bienvenue{
+    padding: 20px 130px;
+    background-color: #10181F;
+
+}
+
+h2{
+    color: #F3F3F3;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 55px;
+    padding: 80px;
+}
+
+.titre-bienvenue{
+
+}
+
+p{
+    color: #F3F3F3;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+}
+
+.p-bienvenue{
+    padding: 0 60px;
+    width: 700px;
+}
+
+.img-edward{
+    width: 700px;
+    padding: 0 60px;
+    border-radius: 40px;
+}
+
+
+.section-bienvenue{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center ; 
 }
