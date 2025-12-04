@@ -19,7 +19,7 @@ header{
 }
 
 .logo{
-    color: #F3F3F3;
+    color: #EAECEE;
     font-size: 22px;
     font-weight: 600;
 }
@@ -36,16 +36,16 @@ li{
 
 a{
     text-decoration: none;
-    color: #F3F3F3;
+    color: #EAECEE;
     font-weight: 300;
 }
 
 a:hover{
-    color: #D0203A;
+    color: #C92C35;
 }
 
 button{
-    background-color: #F3F3F3;
+    background-color: #EAECEE;
     padding: 8px 20PX;
     border: none;
     border-radius: 20px;
@@ -53,6 +53,6 @@ button{
 }
 
 button:hover{
-    background-color: #D0203A;
+    background-color: #C92C35;
     color: #F3F3F3;
 }

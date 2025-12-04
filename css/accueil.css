@@ -1,6 +1,6 @@
 
 .titre-page{
-    color: #F3F3F3;
+    color: #EAECEE;
     display: flex;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
@@ -18,11 +18,14 @@
     background-repeat: no-repeat;
 }
 
+
+/*
 .section-texte-img-1{
     padding: 120px 130px 140px 130px;
     background-color: #10181F;
 
 }
+
 
 h2{
     color: #F3F3F3;
@@ -56,8 +59,6 @@ p{
     flex-direction: row;
     justify-content: center ; 
 }
-
-
 
 .section-texte-img-2{
     padding: 120px 130px 140px 130px;
@@ -102,3 +103,6 @@ p{
     background-color: #10181F;
     color: #F3F3F3;
 }
+
+*/
+
