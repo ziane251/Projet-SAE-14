@@ -14,14 +14,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 130px;
+    padding: 25px 300px;
     background-color: #10181F80;
 }
 
 .logo{
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
     color: #EAECEE;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 25px;
 }
 
 ul{
