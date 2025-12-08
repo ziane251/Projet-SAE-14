@@ -11,11 +11,14 @@ body{
 }
 
 header{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 300px;
     background-color: #10181F80;
+    z-index: 10;
 }
 
 .logo{
