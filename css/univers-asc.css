@@ -1,0 +1,198 @@
+
+/* ==================[hero-banniere]================== */
+
+.hero-banniere{
+    width: 100%;
+
+    aspect-ratio: 5120 / 2020; 
+    
+    background-image: url('../images/hero-banniere-image-univers-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:   center;
+    justify-content: center; 
+}
+
+.titre-hero{
+    color: #EAECEE;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+.texte-hero{
+    color: #EAECEE;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* ==================[section-presentation]================== */
+
+.section-presentation{
+    padding: 70px 400px;
+    color: #EAECEE;
+}
+
+.titre-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 30px 0;
+}
+
+.image-presentation{
+    width: 500px;
+    border-radius: 8px;
+}
+
+.texte-presentation{
+    width: 500px;
+    padding: 0  0 0 50px;
+    line-height: 1.5;
+}
+
+/* ==================[section-deux-camps]================== */
+
+.section-deux-camps{
+    padding: 70px 400px;
+    color: #0A0F14;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-deux-camps{
+    padding: 0 0 15px 0;
+}
+
+.texte-deux-camps{
+    padding: 10px 0 25px 0;
+}
+
+.les-deux-camps{
+    display: flex;
+    flex-direction: row ;
+}
+
+.partie-camp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    width: 500px;
+}
+
+.titre-camp{
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.img-camp{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.texte-camp{
+    margin: 30px 0;
+}
+
+.liste-camp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.liste-camp li{
+    margin: 3px 0;
+}
+
+
+/* ==================[section-chronologie]================== */
+
+.section-chronologie{
+    padding: 70px 100px;
+    color: #EAECEE;
+    background-color: #10181F;
+}
+
+.titre-chronologie{
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+.chronologie{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.carte-chrono{
+    padding: 40px;
+}
+
+.titre-chrono{
+    width: 300px;
+    margin: 10px 0 15px 0;
+}
+
+.texte-chrono{
+    width: 300px;
+    margin: 10px 0;
+}
+
+.img-chrono{
+    margin: 10px 0;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* --- 1. Pour Chrome, Safari et Edge --- */
+
+/* La taille de la barre (hauteur) */
+.chronologie::-webkit-scrollbar {
+    height: 10px; /* Suffisamment visible pour attraper le rouge */
+}
+
+/* Le fond de la barre (la route) */
+.chronologie::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); /* Gris très pâle pour laisser la vedette au rouge */
+    border-radius: 5px;
+}
+
+/* Le curseur ROUGE (la partie qu'on bouge) */
+.chronologie::-webkit-scrollbar-thumb {
+    background-color: #C92C35; /* Ta couleur rouge */
+    border-radius: 5px; /* Bords arrondis */
+    border: 2px solid transparent; /* Petite astuce pour créer de l'espace autour si besoin */
+    background-clip: content-box; /* Assure que la couleur reste bien dedans */
+}
+
+/* Le curseur au survol (devient plus sombre) */
+.chronologie::-webkit-scrollbar-thumb:hover {
+    background-color: #A0232A; /* Une version plus foncée de ton rouge pour l'effet "clic" */
+}
+
+/* --- 2. Pour Firefox --- */
+.chronologie {
+    /* Couleur du curseur (Rouge) et du fond (Gris pâle) */
+    scrollbar-color: #C92C35 rgba(0, 0, 0, 0.05);
+    scrollbar-width: thin; /* Barre fine */
+}

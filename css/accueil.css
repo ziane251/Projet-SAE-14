@@ -53,29 +53,25 @@ main{
 }
 
 .titre-presentation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 0 0 15px 0;
 }
 
 .citation-credo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 10px 0 20px 0;
 }
 
 .presentation{
     display: flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: center ;
     margin: 10px 0;
     padding: 30px 0;
 }
 
 .image-presentation{
-    width: 500px;
+    width: 450px;
     border-radius: 8px;
 }
 
@@ -90,7 +86,7 @@ main{
 
 .texte-presentation{
     width: 700px;
-    padding: 0 100px 0 0;
+    padding: 0 50px 0 0;
 }
 
 
@@ -103,16 +99,12 @@ main{
 }
 
 .titre-histoire{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 0 0 15px 0;
 }
 
 .texte-histoire{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 10px 0 20px 0;
 }
 
@@ -130,23 +122,21 @@ main{
     padding: 0 20px;
 }
 
-.titre-epoque{
-    display: flex;
-    align-items: flex-end ;
-    font-size: 20px;
-    width: 250px;
-    height: 70px;
-    padding: 15px 10px;
-}
 
 .img-carte-epoque{
     width: 250px;
     border-radius: 10px;
 }
 
+.titre-epoque{
+    font-size: 20px;
+    width: 250px;
+    padding: 15px 3px 10px 3px;
+}
+
 .desc-epoque{
     width: 250px;
-    padding: 15px 3px;   
+    padding: 0px 3px;   
 }
 
 /* ==================[section-rubriques]================== */
@@ -194,18 +184,3 @@ main{
 }
 
 
-/* ==================[pied-de-page]================== */
-
-.pied-de-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F4F4F4;
-    color: #0A0F14;
-    padding: 20px 400px 25px 400px;
-}
-
-.titre-pied-de-page{
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
