@@ -164,35 +164,69 @@
 }
 
 
-/* --- 1. Pour Chrome, Safari et Edge --- */
+/* Pour Chrome, Safari et Edge */
 
-/* La taille de la barre (hauteur) */
+/* La taille de la barre */
 .chronologie::-webkit-scrollbar {
-    height: 10px; /* Suffisamment visible pour attraper le rouge */
+    height: 10px;
 }
 
-/* Le fond de la barre (la route) */
+/* Le fond de la barre */
 .chronologie::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.05); /* Gris très pâle pour laisser la vedette au rouge */
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
 
-/* Le curseur ROUGE (la partie qu'on bouge) */
+/* Le curseur */
 .chronologie::-webkit-scrollbar-thumb {
-    background-color: #C92C35; /* Ta couleur rouge */
-    border-radius: 5px; /* Bords arrondis */
-    border: 2px solid transparent; /* Petite astuce pour créer de l'espace autour si besoin */
-    background-clip: content-box; /* Assure que la couleur reste bien dedans */
+    background-color: #C92C35;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
 }
 
-/* Le curseur au survol (devient plus sombre) */
+/* Le curseur au survol */
 .chronologie::-webkit-scrollbar-thumb:hover {
-    background-color: #A0232A; /* Une version plus foncée de ton rouge pour l'effet "clic" */
+    background-color: #A0232A;
 }
 
-/* --- 2. Pour Firefox --- */
+/* Pour Firefox */
 .chronologie {
-    /* Couleur du curseur (Rouge) et du fond (Gris pâle) */
     scrollbar-color: #C92C35 rgba(0, 0, 0, 0.05);
-    scrollbar-width: thin; /* Barre fine */
+    scrollbar-width: thin;
+}
+
+/* ==================[section-personnages]================== */
+
+.section-personnages{
+    padding: 70px 400px;
+    color: #0A0F14;
+    background-color: #F4F4F4;
+}
+
+.titre-section-personnages{
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+.personnages{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 530px 530px;
+    gap: 40px; 
+    padding: 20px 0;
+}
+
+.img-personnages{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.titre-cartes-personnages{
+    padding: 10px 0;
+}
+
+.carte-personnages p{
+    padding: 3px 0;
 }
