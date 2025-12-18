@@ -230,3 +230,52 @@
 .carte-personnages p{
     padding: 3px 0;
 }
+
+/* ==================[section-credo]================== */
+
+.section-credo{
+    padding: 70px 400px;
+    color: #EAECEE;
+    background-color: #10181F;
+    text-align: center;
+}
+
+.titre-credo{
+    padding: 0 0 15px 0;
+}
+
+.texte-credo{
+    padding: 0 0 15px 0;
+}
+
+.liste-credo{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+ol{
+    list-style: decimal;
+    list-style-type: decimal;
+}
+
+.liste-credo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: #EAECEE;
+}
+
+.liste-credo li{
+    margin: 5px 0;
+}
+
+.boite-liste-credo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
