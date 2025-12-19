@@ -1,17 +1,12 @@
 # 🦅 Le Credo - Fan Site Assassin's Creed
 
-Bienvenue sur le dépôt du projet **Le Credo**. Ce site web a été réalisé dans le cadre de la **SAE 1.04** (ou projet universitaire similaire) et a pour but de présenter l'univers de la célèbre saga de jeux vidéo *Assassin's Creed*.
+Bienvenue sur le dépôt du projet **Le Credo**. Ce site web a été réalisé dans le cadre de la **SAE 1.04** et a pour but de présenter l'univers de la célèbre saga de jeux vidéo *Assassin's Creed*.
 
 🔗 **Accéder au site :** [https://ziane251.github.io/Projet-SAE-14/](https://ziane251.github.io/Projet-SAE-14/)
 
 ## 📝 Description du Projet
 
 Ce projet est un site statique multi-pages conçu pour immerger l'utilisateur dans la "guerre secrète" entre la Confrérie des Assassins et l'Ordre des Templiers. Il sert de vitrine d'information pour les fans et les néophytes souhaitant découvrir la richesse historique et scénaristique de la franchise.
-
-### Objectifs :
-* Mettre en pratique les compétences de développement web (HTML/CSS).
-* Structurer un site avec une navigation claire.
-* Présenter du contenu multimédia (textes, images) de manière esthétique.
 
 ## 🚀 Fonctionnalités
 
