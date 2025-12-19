@@ -35,7 +35,7 @@
 /* ==================[section-presentation]================== */
 
 .section-presentation{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #EAECEE;
 }
 
@@ -57,6 +57,11 @@
 .image-presentation{
     width: 500px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-presentation:hover{
+    transform: scale(1.03); 
 }
 
 .texte-presentation{
@@ -68,7 +73,7 @@
 /* ==================[section-deux-camps]================== */
 
 .section-deux-camps{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #0A0F14;
     background-color: #F4F4F4;
     display: flex;
@@ -105,6 +110,11 @@
 .img-camp{
     width: 300px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-camp:hover{
+    transform: scale(1.03);
 }
 
 .texte-camp{
@@ -145,6 +155,11 @@
 
 .carte-chrono{
     padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.carte-chrono:hover{
+    transform: scale(1.03);
 }
 
 .titre-chrono{
@@ -199,9 +214,12 @@
 /* ==================[section-personnages]================== */
 
 .section-personnages{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #0A0F14;
     background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titre-section-personnages{
@@ -227,14 +245,22 @@
     padding: 10px 0;
 }
 
+.carte-personnages{
+    transition: transform 0.3s ease;
+}
+
 .carte-personnages p{
     padding: 3px 0;
+}
+
+.carte-personnages:hover{
+    transform: scale(1.03);
 }
 
 /* ==================[section-credo]================== */
 
 .section-credo{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #EAECEE;
     background-color: #10181F;
     text-align: center;
@@ -278,4 +304,68 @@ ol{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* ==================[Responsive Web Design]================== */
+
+@media screen and (max-width: 1200px) {
+    .titre-hero{
+        font-size: 60px;
+    }
+
+    .texte-hero{
+        font-size: 20px;
+    }   
+
+    .presentation{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .image-presentation{
+        width: 600px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .texte-presentation{
+        width: 600px;
+        padding:0;
+        line-height: 1.5;
+    }
+
+    .texte-deux-camps{
+        width: 350px;
+    }
+
+    .les-deux-camps{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .partie-camp{
+        padding: 20px 0;
+        width: 350px;
+    }
+
+    .personnages{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 500px 500px 500px;
+        gap: 40px; 
+        padding: 20px 0;
+    }
+
+    .img-personnages{
+        width: 350px;
+    }
+
+    .titre-credo{
+        margin: 0 20px;
+    }
+
+    .boite-liste-credo{
+        width: 350px;
+    }
 }

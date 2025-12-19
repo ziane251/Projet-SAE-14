@@ -16,15 +16,27 @@
 
     <title>Le Credo</title>
 </head>
+
 <body>
+
     <header>
         <a class="logo" href="index.html">Le Credo</a>
-        <ul class="liste-nav-bar">
-            <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="univers-asc.html">L'UNIVERS ASC</a></li>
-            <li><a href="a-propos.html">À PROPOS</a></li>
-        </ul>
-        <a class="contact" href="contact.html">Nous Contacter</a>
+
+
+        <div class="burger">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <div class="lien-nav">
+            <ul class="liste-nav-bar">
+                <li class="nav-lien"><a href="index.html">ACCUEIL</a></li>
+                <li class="nav-lien"><a href="univers-asc.html">L'UNIVERS ASC</a></li>
+                <li class="nav-lien"><a href="a-propos.html">À PROPOS</a></li>
+            </ul>
+            <a class="contact" href="contact.html">Nous Contacter</a>
+        </div>
     </header>
 
     <main>
@@ -45,10 +57,8 @@
             <p class="texte-pourquoi">Ce site web, "LE CREDO", a été réalisé dans le cadre d'un projet universitaire. La consigne était de concevoir et développer un site internet en utilisant nos compétences techniques.</p>
             <p class="texte-pourquoi">J'avais le choix du sujet, et je ne voulais pas faire une simple page vitrine sans âme. J'ai donc décidé de combiner l'utile à l'agréable en créant un site dédié à l'univers d'Assassin's Creed.</p>
             <p class="texte-pourquoi">Pour l'instant, le site se concentre sur deux sections principales :</p>
-            <ul class="liste-pourquoi">
-                <li><b>La Page d'Accueil :</b> Pour présenter l'ambiance générale.</li>
-                <li><b>La Page Univers :</b> Pour expliquer l'histoire et la chronologie de la saga.</li>
-            </ul>
+            <p class="texte-pourquoi"><b>- La Page d'Accueil :</b> Pour présenter l'ambiance générale.</p>
+            <p class="texte-pourquoi"><b>- La Page Univers :</b> Pour expliquer l'histoire et la chronologie de la saga.</p>
         </div>
 
         <div class="pourquoi-asc">
@@ -69,5 +79,15 @@
         <h2 class="titre-pied-de-page">Rien n'est vrai, tout est permis !</h2>
         <p class="info-pied-de-page">© 2025 LE CREDO | Site de fan</p>
     </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.lien-nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+
 </body>
 </html>

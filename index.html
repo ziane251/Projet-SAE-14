@@ -15,91 +15,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>Le Credo</title>
+
+    
 </head>
 <body>
     <header>
         <a class="logo" href="index.html">Le Credo</a>
-        <ul class="liste-nav-bar">
-            <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="univers-asc.html">L'UNIVERS ASC</a></li>
-            <li><a href="a-propos.html">À PROPOS</a></li>
-        </ul>
-        <a class="contact" href="contact.html">Nous Contacter</a>
+
+        <div class="burger">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <div class="lien-nav">
+            <ul class="liste-nav-bar">
+                <li class="nav-lien"><a href="index.html">ACCUEIL</a></li>
+                <li class="nav-lien"><a href="univers-asc.html">L'UNIVERS ASC</a></li>
+                <li class="nav-lien"><a href="a-propos.html">À PROPOS</a></li>
+            </ul>
+            <a class="contact" href="contact.html">Nous Contacter</a>
+        </div>
     </header>
 
     <main>
 
         <div class="hero-banniere">
-
             <h1 class="titre-hero">LE CREDO</h1>
-
             <h2 class="sous-titre-hero">L'HISTOIRE EST VOTRE TERRAIN DE JEU</h2>
-
             <p class="texte-hero">Découvrez Assassin's Creed, la saga qui vous fait voyager à travers les époques.</p>
-
         </div>
 
         <div class="section-presentation">
-
             <h2 class="titre-presentation">Une Guerre Secrète à Travers les Siècles</h2>
-
             <p class="citation-credo">"Nous agissons dans l'ombre pour servir la lumière."</p>
-
             <div class="presentation">
                 <div class="texte-presentation">
                     <P>Assassin's Creed n'est pas qu'une série de jeux vidéo, c'est une fresque historique immense.
                     <br><br>
                     Depuis la nuit des temps, deux sociétés secrètes s'affrontent pour l'avenir de l'humanité :
                     </P>
-
                     <ul class="liste-presentation">
                         <li>La Confrérie des Assassins : Défenseurs du libre arbitre, de la liberté et de l'individualité.</li>
                         <li>L'Ordre des Templiers : Partisans de l'ordre, du contrôle et de la paix imposée par la force.</li>
                     </ul>
-
                     <p>Sur ce site, nous décryptons cette lutte millénaire qui s'étend de la Grèce Antique jusqu'au monde moderne.</p>
                 </div>
-
-                <img class="image-presentation" src="./images/background-2.png" alt="">
+                <img class="image-presentation" src="./images/background-2.png" alt="Edward Kenway armé de pistolets sur le pont d'un navire pirate">
             </div>
-
         </div>
 
 
         <div class="section-histoire">
-
             <h2 class="titre-histoire">L'Histoire est votre terrain de jeu</h2>
-
             <p class="texte-histoire">Revivez les moments charnières de l'humanité en incarnant des ancêtres légendaires.</p>
-
             <div class="grille-epoques">
-
                 <div class="carte-epoque">
-                    <img class="img-carte-epoque" src="./images/img-carte-antiquite.png" alt="">
+                    <img class="img-carte-epoque" src="./images/img-carte-antiquite.png" alt="Bayek voyageant à dos de chameau dans le désert devant une pyramide">
                     <h3 class="titre-epoque">L'Antiquité Mythologique</h3>
                     <p class="desc-epoque">Explorez l'Égypte de Cléopâtre ou la Grèce de Socrate.</p>
                 </div>
-
                 <div class="carte-epoque">
-                    <img class="img-carte-epoque" src="./images/img-carte-moyen-age.png" alt="">
+                    <img class="img-carte-epoque" src="./images/img-carte-moyen-age.png" alt="Vikings observant l'horizon depuis une falaise dans Assassin's Creed Valhalla">
                     <h3 class="titre-epoque">La Renaissance & Le Moyen-Âge</h3>
                     <p class="desc-epoque">Devenez un maître de l'art à Florence ou un Viking conquérant l'Angleterre.</p>
                 </div>
-
                 <div class="carte-epoque">
-                    <img class="img-carte-epoque" src="./images/img-carte-revolution.png" alt="">
+                    <img class="img-carte-epoque" src="./images/img-carte-revolution.png" alt="Arno Dorian devant un drapeau français déchiré et Notre-Dame durant la Révolution">
                     <h3 class="titre-epoque">L'Ère des Révolutions</h3>
                     <p class="desc-epoque">Battez-vous pour la liberté à Paris, à Londres ou aux Amériques.</p>
                 </div>
-
                 <div class="carte-epoque">
-                    <img class="img-carte-epoque" src="./images/img-carte-orient.png" alt="">
+                    <img class="img-carte-epoque" src="./images/img-carte-orient.png" alt="Silhouette d'un Assassin Shinobi sur un toit au Japon féodal devant un soleil rouge">
                     <h3 class="titre-epoque">L'Orient et l'Asie</h3>
                     <p class="desc-epoque">Découvrez les secrets du Japon Féodal et de la Chine Impériale.</p>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -133,5 +124,14 @@
 
         <p class="info-pied-de-page">© 2025 LE CREDO | Site de fan</p>
     </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.lien-nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>

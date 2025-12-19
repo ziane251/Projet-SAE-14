@@ -19,33 +19,39 @@ main{
     
     display: flex;
     flex-direction: column;
-    align-items:   flex-end;
+    align-items:   center;
     justify-content: center; 
 }
 
+
+
 .titre-hero{
     color: #EAECEE;
-    font-size: 180px;
+    text-align: center;
+    font-size:100px;
     font-weight: 800;
-    margin: 0 290px -10px 0;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
 }
 
 .sous-titre-hero{
-    margin: 0px 300px 10px 0;
+    text-align: center;
+    margin: 0 0 10px 0;
     color: #EAECEE;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .texte-hero{
-    margin: 5px 300px 10px 0;
     color: #EAECEE;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
 }
 
 
 /* ==================[section-presentation]================== */
 
 .section-presentation{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #EAECEE;
 }
 
@@ -70,6 +76,11 @@ main{
 .image-presentation{
     width: 450px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-presentation:hover{
+    transform: scale(1.03); 
 }
 
 .liste-presentation{
@@ -90,7 +101,8 @@ main{
 /* ==================[section-histoire]================== */
 
 .section-histoire{
-    padding: 70px 400px;
+    padding: 70px 0;
+    display: block;
     color: #0A0F14;
     background-color: #F4F4F4;
 }
@@ -108,7 +120,7 @@ main{
 .grille-epoques{
     display: flex;
     flex-direction: row ;
-    justify-content: space-between ;
+    justify-content: center ;
     padding: 20px 0;
 }
 
@@ -117,8 +129,13 @@ main{
     flex-direction: column;
     align-items: center ;
     padding: 0 20px;
+    transition: transform 0.3s ease;
+
 }
 
+.carte-epoque:hover{
+    transform: scale(1.03);
+}
 
 .img-carte-epoque{
     width: 250px;
@@ -143,7 +160,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center ;
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #0A0F14;
 }
 
@@ -153,6 +170,12 @@ main{
     padding: 15px 20px 15px 20px;
     width: 800px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.carte-rubrique:hover{
+    transform: scale(1.03); 
 }
 
 .titre-rubrique{
@@ -175,11 +198,282 @@ main{
     padding: 6px 15px;
     border-radius: 20px;
     margin: 10px 0 0 0;
+    transition: transform 0.3s ease;
 }
 
 .lien-rubrique:hover{
     background-color: #EAECEE;
     color: #C92C35;
+    transform: scale(1.1); 
 }
 
+/* ==================[Responsive Web Design]================== */
 
+@media screen and (max-width: 1200px) {
+    .titre-hero{
+        font-size: 80px;
+    }
+
+    .sous-titre-hero{
+        margin: 0 0 10px 0;
+        font-size: 25px;
+    }
+
+    .texte-hero{
+        font-size: 20px;
+    }   
+    
+    .presentation{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .texte-presentation{
+        width: 600px;
+        padding: 0 0 30px 0;
+    }
+
+    .image-presentation{
+        width: 600px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+   
+    }
+
+    .grille-epoques{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center ;
+    }
+
+    .carte-epoque{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 20px 0 ;
+    }
+
+    .img-carte-epoque{
+        width: 600px;
+    }
+
+    .titre-epoque{
+        font-size: 30px;
+        width: 600px;
+        padding: 15px 3px 10px 3px;
+    }
+
+    .desc-epoque{
+        width: 600px;
+        font-size: 17px;
+        padding: 0px 3px;
+    }
+
+    .carte-rubrique{
+        background-color: #F4F4F4;
+        margin: 20px 0;
+        padding: 15px 20px 15px 20px;
+        width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+
+    .titre-hero{
+        font-size: 60px;
+    }
+
+    .sous-titre-hero{
+        margin: 0 0 5px 0;
+        font-size: 18px;
+    }
+
+    .texte-hero{
+        font-size: 10px;
+    }   
+    
+    .section-presentation{
+        padding: 45px 0px;
+        color: #EAECEE;
+    }
+
+    .titre-presentation{
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+
+    .citation-credo{
+        text-align: center;
+        padding: 8px 0 15px 0;
+    }
+
+
+    .presentation{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .texte-presentation{
+        width: 400px;
+        padding: 0 0 15px 0;
+    }
+
+    .image-presentation{
+        width: 400px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+   
+    }
+
+    .liste-presentation{
+        font-size: 14px;
+    }
+
+
+    .grille-epoques{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center;
+    }
+
+    .carte-epoque{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 15px 0 ;
+    }
+
+    .img-carte-epoque{
+        width: 400px;
+    }
+
+    .titre-epoque{
+        font-size: 30px;
+        width: 400px;
+        padding: 15px 3px 10px 3px;
+    }
+
+    .desc-epoque{
+        width: 400px;
+        font-size: 17px;
+        padding: 0px 3px;
+    }
+
+    .carte-rubrique{
+        background-color: #F4F4F4;
+        margin: 20px 0;
+        padding: 15px 20px 15px 20px;
+        width: 400px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero-banniere{
+        padding: 100px 0;
+    }
+
+    .titre-hero{
+        font-size: 40px;
+    }
+
+    .sous-titre-hero{
+        margin:  0 20px 5px 20px;
+        font-size: 18px;
+    }
+
+    .texte-hero{
+        font-size: 10px;
+        margin: 0 20px 15px 20px;
+    }   
+    
+    .section-presentation{
+        padding: 45px 0px;
+        color: #EAECEE;
+    }
+
+    .titre-presentation{
+        text-align: center;
+        padding: 0 0 10px 0;
+        margin: 0 20px;
+    }
+
+    .citation-credo{
+        text-align: center;
+        padding: 8px 0 15px 0;
+        margin: 0 20px;
+    }
+
+
+    .presentation{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .texte-presentation{
+        width: 300px;
+        padding: 0 0 15px 0;
+    }
+
+    .image-presentation{
+        width: 300px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+   
+    }
+
+    .liste-presentation{
+        font-size: 14px;
+    }
+
+
+    .grille-epoques{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center;
+    }
+
+    .carte-epoque{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 15px 0 ;
+    }
+
+    .img-carte-epoque{
+        width: 300px;
+    }
+
+    .titre-epoque{
+        font-size: 30px;
+        width: 300px;
+        padding: 15px 3px 10px 3px;
+    }
+
+    .desc-epoque{
+        width: 300px;
+        font-size: 17px;
+        padding: 0px 3px;
+    }
+
+    .carte-rubrique{
+        background-color: #F4F4F4;
+        margin: 20px 0;
+        padding: 15px 20px 15px 20px;
+        width: 300px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+    }
+
+}

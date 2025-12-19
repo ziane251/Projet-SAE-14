@@ -7,6 +7,16 @@ p{
     padding: 0 0 10px 0;
 }
 
+.titre-pied-de-page{
+    padding: 0;
+}
+
+.info-pied-de-page{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
 /* ==================[hero-banniere]================== */
 
 .hero-banniere{
@@ -43,7 +53,7 @@ p{
 /* ==================[presentation]================== */
 
 .presentation{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #EAECEE;
     display: flex;           
     flex-direction: column;
@@ -60,7 +70,7 @@ p{
 /* ==================[pourquoi]================== */
 
 .pourquoi{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #0A0F14;
     background-color: #F4F4F4; 
     display: flex;           
@@ -71,7 +81,7 @@ p{
 /* ==================[pourquoi-asc]================== */
 
 .pourquoi-asc{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #EAECEE;
     display: flex;           
     flex-direction: column;
@@ -81,10 +91,67 @@ p{
 /* ==================[conclusion]================== */
 
 .conclusion{
-    padding: 70px 400px;
+    padding: 70px 0px;
     color: #0A0F14;
     background-color: #F4F4F4;
     display: flex;           
     flex-direction: column;
     align-items: center;
+}
+
+/* ==================[Responsive Web Design]================== */
+
+@media screen and (max-width: 1200px) {
+    .titre-hero{
+        font-size: 60px;
+    }
+
+    .texte-hero{
+        font-size: 20px;
+    }   
+
+
+    P{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+
+    .titre-hero{
+        font-size: 40px;
+        margin: 0 20px;
+    }
+
+
+    .texte-hero{
+        font-size: 15px;
+    }   
+
+    P{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero-banniere{
+        padding: 100px 0;
+    }
+
+    .titre-hero{
+        font-size: 40px;
+    }
+
+    .texte-hero{
+        font-size: 10px;
+        margin: 0 20px 15px 20px;
+    } 
+
+    P{
+        width: 350px;
+    }
+
 }

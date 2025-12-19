@@ -32,35 +32,122 @@
     text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
 }
 
-/* ==================[hero-banniere]================== */
+/* ==================[pourquoi]================== */
 
-.section-presentation{
-    padding: 70px 400px;
+.pourquoi{
+    padding: 70px 0px;
     color: #EAECEE;
-}
-
-.titre-presentation{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0 0 15px 0;
 }
 
-.presentation{
+.titre-pourquoi{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.liste{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+.texte-pourquoi{
+    margin: 0 0 10px 0;
+}
+
+.section-texte-pourquoi{
+    width: 700px;
+}
+
+/* ==================[nous-contacter]================== */
+
+.nous-contacter{
+    padding: 70px 0px;
+    color: #0A0F14;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    padding: 30px 0;
 }
 
-.image-presentation{
-    width: 500px;
-    border-radius: 8px;
+.nous-contacter .liste{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 20px 0;
 }
 
-.texte-presentation{
-    width: 500px;
-    padding: 0  0 0 50px;
-    line-height: 1.5;
+.nous-contacter a{
+    color: #0A0F14;
+    font-weight: 400;
+}
+
+.nous-contacter a:hover{
+    color: #C92C35;
+    font-weight: 400;
+}
+
+
+/* ==================[Responsive Web Design]================== */
+
+@media screen and (max-width: 1200px) {
+    .titre-hero{
+        font-size: 60px;
+    }
+
+    .texte-hero{
+        font-size: 20px;
+    }   
+
+    .section-texte-pourquoi{
+        width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+
+    .titre-hero{
+        font-size: 40px;
+        margin: 0 20px;
+    }
+
+
+    .texte-hero{
+        font-size: 15px;
+    }   
+
+    .section-texte-pourquoi{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero-banniere{
+        padding: 100px 0;
+    }
+
+    .titre-hero{
+        font-size: 40px;
+    }
+
+    .texte-hero{
+        font-size: 10px;
+        margin: 0 20px 15px 20px;
+    } 
+
+    .section-texte-pourquoi{
+        width: 350px;
+    }
+
+
 }

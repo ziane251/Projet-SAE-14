@@ -19,12 +19,22 @@
 <body>
     <header>
         <a class="logo" href="index.html">Le Credo</a>
-        <ul class="liste-nav-bar">
-            <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="univers-asc.html">L'UNIVERS ASC</a></li>
-            <li><a href="a-propos.html">À PROPOS</a></li>
-        </ul>
-        <a class="contact" href="contact.html">Nous Contacter</a>
+
+
+        <div class="burger">
+            <div class="barre"></div>
+            <div class="barre"></div>
+            <div class="barre"></div>
+        </div>
+
+        <div class="lien-nav">
+            <ul class="liste-nav-bar">
+                <li class="nav-lien"><a href="index.html">ACCUEIL</a></li>
+                <li class="nav-lien"><a href="univers-asc.html">L'UNIVERS ASC</a></li>
+                <li class="nav-lien"><a href="a-propos.html">À PROPOS</a></li>
+            </ul>
+            <a class="contact" href="contact.html">Nous Contacter</a>
+        </div>
     </header>
 
     <main>
@@ -33,23 +43,30 @@
             <p class="texte-hero">Un bug sur le site ? Une suggestion ? Envoyez un message à l'administrateur.</p>
         </div>
 
-        <div class="section-presentation">
-
-            <h2 class="titre-presentation">Pourquoi me contacter ?</h2>
-
-            <div class="presentation">
-                <div class="texte-presentation">
-                    <P>
-                        L'humanité pense être maîtresse de son destin. C'est un mensonge. Avant nous, il y avait Ceux-qui-étaient-là (Les Isu). Une civilisation technologiquement avancée qui a créé les humains comme main-d'œuvre, contrôlés par des artefacts puissants : les Fragments d'Éden.
-                    </p>
-                    <br>
-                    <P>
-                        Aujourd'hui, grâce à une technologie nommée l'Animus, nous pouvons explorer la "mémoire génétique" de nos ancêtres pour retrouver ces artefacts perdus avant qu'ils ne tombent entre de mauvaises mains.
-                    </p>
-                </div>
+        <div class="pourquoi">
+            <h2 class="titre-pourquoi">Pourquoi Me Contacter ?</h2>
+            <div class="section-texte-pourquoi">
+                
+                <p class="texte-pourquoi">Ce site est un projet personnel que j'ai entrepris pour partager ma passion pour l'univers ASC. Si vous avez des questions, des suggestions d'amélioration, ou si vous souhaitez simplement discuter de l'univers ASC, n'hésitez pas à me contacter via le formulaire ci-dessous.</p>
+                <p class="texte-pourquoi">Vous pouvez utiliser le formulaire ci-dessous pour :</p>
+                <ul class="liste">
+                    <li>Signaler un bug</li>
+                    <li>Proposer une amélioration</li>
+                    <li>Discuter de l'univers ASC</li>
+                </ul>
             </div>
+        </div>
+
+        <div class="nous-contacter">
+            <h2 class="titre-contact">Nous Contacter</h2>
+            <ul class="liste">
+                <li><b>Email : </b>aghiles.ziane@etu.unicaen.fr</li>
+                <li><b>Localisation : </b>IUT Grand Ouest Normandie, Ifs</li>
+                <li><b>GitHub :</b> <a href="https://github.com/ziane251">github.com/ziane251</a></li>
+            </ul>
 
         </div>
+
     </main>
 
     <footer class="pied-de-page">
@@ -58,5 +75,14 @@
 
         <p class="info-pied-de-page">© 2025 LE CREDO | Site de fan</p>
     </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.lien-nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>
