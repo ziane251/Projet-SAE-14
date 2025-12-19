@@ -1,0 +1,66 @@
+
+/* ==================[hero-banniere]================== */
+
+.hero-banniere{
+    width: 100%;
+
+    aspect-ratio: 5120 / 2020; 
+    
+    background-image: url('../images/hero-banniere-image-contact-4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:   center;
+    justify-content: center; 
+}
+
+.titre-hero{
+    color: #EAECEE;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+.texte-hero{
+    color: #EAECEE;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* ==================[hero-banniere]================== */
+
+.section-presentation{
+    padding: 70px 400px;
+    color: #EAECEE;
+}
+
+.titre-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 30px 0;
+}
+
+.image-presentation{
+    width: 500px;
+    border-radius: 8px;
+}
+
+.texte-presentation{
+    width: 500px;
+    padding: 0  0 0 50px;
+    line-height: 1.5;
+}
